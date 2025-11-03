@@ -64,6 +64,9 @@ author:
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/graemeboulton/" 
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/graemeboulton/"
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
