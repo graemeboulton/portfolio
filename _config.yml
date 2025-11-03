@@ -62,9 +62,11 @@ author:
   avatar : "/assets/images/bio-photo.jpeg"
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
+    - label: "PowerBI"
+      icon: "fas fa-chart-bar"
       url: "https://www.linkedin.com/in/graemeboulton/" 
+
+      
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/graemeboulton/"
