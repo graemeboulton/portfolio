@@ -1,9 +1,7 @@
 main:
+  - title: "Home"
+    url: /
   - title: "About Me"
     url: /about/
- #  - title: "Categories"
- #    url: /categories/
-  - title: "Portfolio"
-    url: /portfolio/
   - title: "CV"
     url: /cv/
