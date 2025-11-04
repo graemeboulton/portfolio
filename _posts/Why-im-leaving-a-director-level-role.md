@@ -1,5 +1,5 @@
 ---
-title: "Welcome!"
+title: "Why I deciede to leave a director level role!"
 date: 2019-04-18T15:34:30-04:00
 categories:
   - blog
