@@ -10,5 +10,6 @@
 // Load theme
 @import "minimal-mistakes";
 
-// 👇 Add your custom CSS below this line
-
+html {
+  font-size: 12px;   // default is 16px
+}
