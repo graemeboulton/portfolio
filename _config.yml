@@ -61,19 +61,19 @@ author:
   # name   : "Graeme Boulton"
   avatar : "/assets/images/bio-photo.jpeg"
   bio    : "Hey, welcome to my website. Here you can find out more about me, see a more in-depth C.V and see some of my work (coming soon!) 👇"
-  links:
-    - label: "SQL"
-      icon: "fas fa-database"
-      url: "https://www.linkedin.com/in/graemeboulton/"
-    - label: "Pyton"
-      icon: "fas fa-code"
-      url: "https://www.linkedin.com/in/graemeboulton/" 
-    - label: "Data Engineering"
-      icon: "fas fa-cloud"
-      url: "https://www.linkedin.com/in/graemeboulton/" 
-    - label: "PowerBI"
-      icon: "fas fa-chart-bar"
-      url: "https://www.linkedin.com/in/graemeboulton/" 
+#  links:
+#    - label: "SQL"
+#      icon: "fas fa-database"
+#      url: "https://www.linkedin.com/in/graemeboulton/"
+#    - label: "Pyton"
+#      icon: "fas fa-code"
+#      url: "https://www.linkedin.com/in/graemeboulton/" 
+#    - label: "Data Engineering"
+#      icon: "fas fa-cloud"
+#      url: "https://www.linkedin.com/in/graemeboulton/" 
+#    - label: "PowerBI"
+#      icon: "fas fa-chart-bar"
+#      url: "https://www.linkedin.com/in/graemeboulton/" 
 
 # footer:
 #   links:
