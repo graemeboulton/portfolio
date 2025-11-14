@@ -1,23 +1,30 @@
 ---
-title: "Portfolio #1 - Custom SQL, Postgres databases & PBI Model"
+title: "Portfolio #1 - Custom SQL, Postgres DB & PBI Model"
 date: 2019-04-18T15:34:30-04:00
 categories:
   - blog
 ---
 
-Hey, I've just completed a SQL course so I thought I would put that to use by creating a custom date table and combine it with a commonly available dataset, DVD Rental and pull it together into PowerBI to demonstrate some of my skills :)
+Hey, let me tell you a bit about this project..
 
-The course I took actually used the DVD Rental database, so I'm failry familiar with it - hence why I chose if for my first portfolio task. 
+Server:
+I provisioned an Azure Database for PostgreSQL flexible server
 
-I created a Postgres database in Azure and restored DVD Rental from the .tar file and added the custom data table to that database.
+Database: 
+I have recently completed a SQL course and the sample database it used the most was the DVD Rental sample. More information can be found about that here - https://neon.com/postgresql/postgresql-getting-started/postgresql-sample-database.
 
-I then performed the nessecary configuration changes to allow it to be replicated in both PowerBI and Fabric and it was this connection I used to connect to PowerBI desktop itself.
+Custom SQL:
+I added a trading_calendar date table into the DVD Rental database, which I'll use for the majority of filtering in the PBI report. I created this table as it mirrored the trading calendar from my previous role. In that business the calendar actually existed in an Excel document, so that it could be easily updated by people who did not have SQL skills. The trading year runs from Jan - Feb, so aligning all of the weeks, months etc was a good test. As it was my first piece of work I will admit to getting some assistance from ChatGPT and I used it to clean it up at the end so that it was nice and readable - the code for this is at the bottom.
+
+
+PowerBI:
+Within Azure, I made the nessecary config changes to allow the data set to be made available to PowerBI and Fabric and that is how the connection was made.
 
 Here's the pbix file -
 
 Here's the report - 
 
-Here's the SQL script I created. This trading calendar actually runs from Jan - Feb, which is based on the previous business I worked for. In that business it was actually brought into PBI via a spreadsheet as it was quite complexed, so I thought it would be a good way to test my skills. As it was my first, I'll be very honest that I did need to get some support from ChatGPT and once it was completed I ran it back through to get the formatting nice.
+Any questions, drop me a note at email@graemeboulton.com
 
 ```sql
 -------------------------------------------------------------
