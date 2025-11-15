@@ -3,13 +3,13 @@ permalink: /about/
 title: "About"
 ---
 
-This page isn’t here to repeat my CV, but to share a bit more information about me which I *think* will be useful to potential employers and/or recruiters.
+This page isn’t here to repeat my CV, but to share a bit more information about me, which I *hope* will be useful to potential employers and/or recruiters.
 
 ⸻
 
 **My passion for data**
 
-I’m not entirely sure where it started, but my fascination with data goes right back to my mid-teens. When I studied a general ICT course at college, the subject I was most excited about was databases. I didn’t understand how they worked at the time — it genuinely felt like magic — and I was desperate to learn more.
+I’m not entirely sure where it started, but my fascination with data goes right back to my mid-teens. When I studied a general ICT course at college, the subject I was most excited about was databases. I didn’t understand how they worked at the time and I was desperate to learn more.
 
 Unfortunately, the course didn't delve into data as much as I would have liked and instead focused heavily on web development, which shaped the early part of my career (as my CV reflects). But that curiosity for how data works never left. It’s always been an itch I’ve wanted to scratch properly.
 
@@ -37,11 +37,11 @@ https://www.sciencedirect.com/science/article/pii/S0957417424030677￼
 
 **Why I chose to leave a director-level role to focus on data**
 
-In what I could call the first phase of my career, I was extremely motived to get to the top of which ever organisation I joined and fortunately I was able to do that. I felt that in that role I'd achieved everything I wanted, that being building fantastic teams and delivering tech in-house. After the delivery of the latest transforamtion project, I knew I needed a change to freshen things up, get re-energised and focus on the area that has been a passion for over two decades: data.
+In what I could call the first phase of my career, I was extremely motived to get to the top of which ever organisation I joined and fortunately, I was able to do that. I felt that in that role I'd achieved everything I wanted, which was building fantastic teams and delivering tech in-house. After the delivery of the latest transformation project, I knew I needed a change to freshen things up, get re-energised and focus on the area that has been a passion for over two decades: data.
 
 ⸻
 
-**Will I Have any difficulty stepping down in seniority?**
+**Will I have any difficulty stepping down in seniority?**
 
 Absolutely not.
 In fact, I’m genuinely looking forward to it.
@@ -58,7 +58,7 @@ While I’m absolutely ready to step into the right role immediately, I’m equa
 
 So far, I’ve completed a SQL course and am wrapping up another focused on statistical analysis. I’ve used both throughout my career, but I felt revisiting them with a fresh perspective was important.
 
-I’m also currently enrolled in a Python course, which is a new area for me, while continuing to strengthen my skills across Azure, Power BI, and Microsoft Fabric. Microsoft’s ecosystem is my current focus, and I’m working through the key skills relevant to the AZ-900, PL-300, DP-203, and DP-600 certifications.
+I’m also currently enrolled in a Python course, which is a new area for me in terms of being hands-on, while continuing to strengthen my skills across Azure, Power BI, and Microsoft Fabric. Microsoft’s ecosystem is my current focus, and I’m working through the key skills relevant to the AZ-900, PL-300, DP-203, and DP-600 certifications.
 Whether I sit the exams will ultimately come down to timing; the priority right now is building capability.
 
 While my direction leans toward Microsoft, I’m also keeping an eye on the AWS and GCP equivalents, as well as exploring wider industry tools such as Tableau, Looker, dbt, Databricks and others.
