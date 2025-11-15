@@ -4,11 +4,7 @@ title: "About"
 ---
 Hey, I’m Graeme — welcome to my portfolio site.
 
-This page isn’t here to repeat my CV, but to share a bit more about why I’m passionate about data, how hands-on I’ve remained throughout my career, and why I’m now fully committing to a data-focused path. But first, here's a little about me..
-
-I’m 40 years old, originally from central Scotland and now living in the beautiful town of Morpeth, Northumberland. 
-
-I have two wonderful children, aged 12 and 9, and an equally wonderful partner (whose age will suitably remain private 😄).
+This page isn’t here to repeat my CV, but to share a bit more information about me which I *think* will be useful to potential employers and/or recruiters.
 
 ⸻
 
@@ -16,7 +12,7 @@ I have two wonderful children, aged 12 and 9, and an equally wonderful partner (
 
 I’m not entirely sure where it started, but my fascination with data goes right back to my mid-teens. When I studied a general ICT course at college, the subject I was most excited about was databases. I didn’t understand how they worked at the time — it genuinely felt like magic — and I was desperate to learn more.
 
-Unfortunately, the course skimmed over data and focused heavily on web development, which shaped the early part of my career (as my CV reflects). But that curiosity for how data works never left. It’s always been an itch I’ve wanted to scratch properly.
+Unfortunately, the course didn't delve into data as much as I would have liked and instead focused heavily on web development, which shaped the early part of my career (as my CV reflects). But that curiosity for how data works never left. It’s always been an itch I’ve wanted to scratch properly.
 
 ⸻
 
@@ -34,7 +30,7 @@ IT:
 I built the company’s entire Power BI architecture from the ground up back in 2020 during Covid, whilst the entire business was on furlough.
 I designed and managed the full ETL layer using dataflows, which involved complex cleansing and transformation. I created dozens of operational dashboards covering sales, footfall, conversion, customer metrics, employee KPIs and much more. I also built a comprehensive board-level reporting app spanning retail, merchandising, HR, marketing, and technology.
 
-I’ve led several transformation projects, but one of the most relevant is a machine learning initiative focused on forecasting sales and optimising inventory movement. This project, completed through the UK government’s KTP programme, was awarded the highest possible grade — and the resulting academic paper was later picked up by a prestigious US university:
+I’ve led several transformation projects, but one of the most relevant is a machine learning initiative focused on forecasting sales and optimising inventory movement. This project, completed through the UK government’s KTP programme, was awarded the highest possible grade — and the resulting academic paper was later picked up by a prestigious US puplication:
 
 https://www.sciencedirect.com/science/article/pii/S0957417424030677￼
 
@@ -42,11 +38,7 @@ https://www.sciencedirect.com/science/article/pii/S0957417424030677￼
 
 **Why I chose to leave a director-level role to focus on data**
 
-There are a few reasons:
-
-1.	Senior tech roles can be incredibly intense. You’re constantly spinning plates, and those plates increase year after year. I wanted to focus on fewer things but do them exceptionally well.
-2.	After years of delivering major transformations, burnout is real. I’m not afraid of hard work — far from it — but I recognised the toll and knew it was time for a new challenge.
-3.	Data is what I genuinely love. Stepping away from a senior leadership position wasn’t a step backwards — it was a deliberate choice to move toward the work that energises me the most.
+In what I could call the first phase of my career, I was extremely motived to get to the top of which ever organisation I joined and fortunately I was able to do that. I felt that in that role I'd achieved everything I wanted, that being building fantastic teams and delivering tech in-house. After the delivery of the latest transforamtion project, I knew I needed a change to freshen things up, get re-energised and focus on the area that has been a passion for over two decades: data.
 
 ⸻
 
@@ -58,3 +50,18 @@ In fact, I’m genuinely looking forward to it.
 I’m excited to be more hands-on, more technical, and to continue learning and building meaningful solutions. I see this move not as a drop in seniority, but as a refocusing toward what I enjoy and what I want the next chapter of my career to be about.
 
 ⸻
+
+**What am I doing currently?**
+
+I left my previous role on Friday 31st October. I took a week off to recharge, and then I got straight into learning.
+
+While I’m absolutely ready to step into the right role immediately, I’m equally comfortable spending the next few months focused on structured upskilling if that’s what it takes to build the strongest foundation possible.
+
+So far, I’ve completed a SQL course and am wrapping up another focused on statistical analysis. I’ve used both throughout my career, but I felt revisiting them with a fresh perspective was important.
+
+I’m also currently enrolled in a Python course, which is a new area for me, while continuing to strengthen my skills across Azure, Power BI, and Microsoft Fabric. Microsoft’s ecosystem is my current focus, and I’m working through the key skills relevant to the AZ-900, PL-300, DP-203, and DP-600 certifications.
+Whether I sit the exams will ultimately come down to timing; the priority right now is building capability.
+
+While my direction leans toward Microsoft, I’m also keeping an eye on the AWS and GCP equivalents, as well as exploring wider industry tools such as Tableau, Looker, dbt, Databricks and others.
+
+As I continue developing my skills, I’ll be showcasing my progress and projects on this site.
