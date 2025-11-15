@@ -3,7 +3,7 @@ permalink: /about/
 title: "About"
 ---
 
-This page isn’t here to repeat my CV, but to share a bit more information about me, which I *hope* will be useful to potential employers and/or recruiters..
+This page isn’t here to repeat my CV, but to share a bit more information about me, which I *hope* will be useful to potential employers and/or recruiters - particularly at this specific point in time when I am transitioing my career into a data role.
 
 ⸻
 
@@ -20,12 +20,15 @@ Unfortunately, the course didn't delve into data as much as I would have liked a
 Data has been a core part of every role I’ve held.
 
 E-commerce:
+
 I spent years buried in Google Analytics — analysing performance daily, building dashboards, and producing board-level reporting long before I joined the board myself.
 
-Multi-channel & Loyalty:
+Multi-channel:
+
 When I moved into a wider commercial role, my usage of analytics grew even deeper. I designed and implemented a loyalty programme and was responsible for everything from segmentation to reporting to data quality tasks such as cleansing, migration, integration, and governance.
 
 IT:
+
 I built the company’s entire Power BI architecture from the ground up back in 2020 during Covid, whilst the entire business was on furlough.
 I designed and managed the full ETL layer using dataflows, which involved complex cleansing and transformation. I created dozens of operational dashboards covering sales, footfall, conversion, customer metrics, employee KPIs and much more. I also built a comprehensive board-level reporting app spanning retail, merchandising, HR, marketing, and technology.
 
@@ -47,6 +50,8 @@ Absolutely not.
 In fact, I’m genuinely looking forward to it.
 
 I’m excited to be more hands-on, more technical, and to continue learning and building meaningful solutions. I see this move not as a drop in seniority, but as a refocusing toward what I enjoy and what I want the next chapter of my career to be about.
+
+It is important to state also, that I am expecting any future salaries to be re-aligned to reflect the drop in seniority and level of responsibility in general.
 
 ⸻
 
