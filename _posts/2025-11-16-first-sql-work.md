@@ -13,6 +13,8 @@ What made this a good test is that the trading year ran from January to February
 
 I’ve built this so it can be re-run at the beginning of each trading year, with only minor edits needed to update the key dates. I also plan to improve it further by linking to a few smaller helper tables so that, over time, only those need to be updated instead of this larger script.
 
+In the spirit of honesty, I did lean on ChatGPT for support to help refine the logic and to tidy up the final version into the cleaner format you see here.
+
 Below is the SQL itself, and here’s a link to the output in CSV format - <a href="{{ '/assets/data/trading-canendar.csv' | relative_url }}" download>Download CSV</a>
 
 ```sql
