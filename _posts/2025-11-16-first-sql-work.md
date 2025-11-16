@@ -9,13 +9,13 @@ In my welcome post I mentioned that work was already underway on a small end-to-
 
 The goal of this query was to recreate the trading calendar from my previous company. There, it lived in an Excel spreadsheet so it could be easily updated or fixed by non-technical users, and was then brought into Power BI as the central date table for all reporting.
 
-What made this a good test is that the trading year ran from January to February, so the start date changed each year and we had to handle both 52- and 53-week years. As a result, week and month boundaries weren’t standard, and all of that logic had to be defined in the query rather than relying on a normal calendar.
+What made this a good test is that the trading year ran from January to February, so the start date changed each year and we had to handle both 52 and 53 week years. As a result, week and month boundaries weren’t standard, and all of that logic had to be defined in the query rather than relying on a normal calendar.
 
 I’ve built this so it can be re-run at the beginning of each trading year, with only minor edits needed to update the key dates. I also plan to improve it further by linking to a few smaller helper tables so that, over time, only those need to be updated instead of this larger script.
 
 In the spirit of honesty, I did lean on ChatGPT for support to help refine the logic and to tidy up the final version into the cleaner format you see here.
 
-Below is the SQL itself, and here’s the <a href="https://raw.githubusercontent.com/graemeboulton/portfolio/master/assets/files/trading_calendar.csv" download>raw output</a>
+Below is the SQL itself, and here’s a <a href="https://raw.githubusercontent.com/graemeboulton/portfolio/master/assets/files/trading_calendar.csv" download>link</a> to the raw output in csv format.
 
 
 ```sql
