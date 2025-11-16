@@ -1,0 +1,13 @@
+<article class="archive__item">
+  <h2 class="archive__item-title">
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </h2>
+
+  <p class="page__meta">
+    {{ post.date | date: "%-d %B %Y" }}
+  </p>
+
+  {% if post.excerpt %}
+    <p class="archive__item-excerpt">{{ post.excerpt | strip_html }}</p>
+  {% endif %}
+</article>
