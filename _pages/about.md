@@ -5,15 +5,11 @@ title: "About"
 
 This page isn’t here to repeat my CV, but to share a bit more information about me, which I *hope* will be useful to potential employers and/or recruiters - particularly at this specific point in time when I am transitioing my career into a data role.
 
-⸻
-
 ## My passion for data
 
 My fascination with data goes right back to my mid-teens. When I studied a general ICT course at college, the subject I was most excited about was databases. I didn’t understand how they worked at the time and I was desperate to learn more.
 
 Unfortunately, the course didn't delve into data as much as I would have liked and instead focused heavily on web development, which shaped the early part of my career (as my CV reflects). But that curiosity for how data works never left. It’s always been an itch I’ve wanted to scratch properly.
-
-⸻
 
 ## How hands-on have I been despite being in senior roles?
 
@@ -36,13 +32,9 @@ I’ve led several transformation projects, but one of the most relevant is a ma
 
 https://www.sciencedirect.com/science/article/pii/S0957417424030677￼
 
-⸻
-
 ## hy I chose to leave a director-level role to focus on data
 
 In what I could call the first phase of my career, I was extremely motived to get to the top of which ever organisation I joined and fortunately, I was able to do that. I felt in that role I'd achieved everything I wanted, which culminated in delivering a large in-house ERP application and data platform. After the delivery of the latest transformation project, I knew I needed a change to freshen things up, get re-energised and focus on working exclusively with data.
-
-⸻
 
 ## Will I have any difficulty stepping down in seniority?
 
@@ -52,7 +44,6 @@ In fact, I’m genuinely looking forward to it.
 I’m excited to be more hands-on, more technical, and to continue learning and building meaningful solutions. I see this move not as a drop in seniority, but as a refocusing toward what I enjoy and what I want the next chapter of my career to be about.
 
 It is also important to state that I’m fully aware and comfortable that future salary levels will align with the reduced seniority and narrower remit.
-⸻
 
 ## What am I doing currently?
 
