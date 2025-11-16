@@ -6,15 +6,19 @@
 
   <p class="page__meta">
 
+    <!-- Date -->
     <span class="page__meta-date">
       <i class="far fa-calendar-alt" aria-hidden="true"></i>
       {{ post.date | date: "%-d %B %Y" }}
     </span>
 
+    <!-- Read time (same formula the template uses on full post pages) -->
     {% capture words %}
       {{ post.content | number_of_words }}
     {% endcapture %}
-    {% assign minutes = words | divided_by:200 | ceil %}
+
+    {% assign minutes = words | plus:0 | divided_by:180 %}
+    {% assign minutes = minutes | ceil %}
 
     <span class="page__meta-readtime">
       <i class="far fa-clock" aria-hidden="true"></i>
