@@ -5,15 +5,13 @@ categories:
   - blog
 ---
 
-In my welcome post I mentioned that work was already underway on a small end-to-end project. Rather than waiting until everything is finished, I wanted to share one part I’m particularly happy with: the SQL I wrote to build a custom trading calendar table.
+In my welcome post I mentioned that work was already underway on a small end-to-end project. Rather than waiting until everything is finished, I wanted to share the SQL I wrote to build a custom trading calendar table.
 
 The goal of this query was to recreate the trading calendar from my previous company. There, it lived in an Excel spreadsheet so it could be easily updated or fixed by non-technical users, and was then brought into Power BI as the central date table for all reporting.
 
 What made this a good test is that the trading year ran from January to February, so the start date changed each year and we had to handle both 52- and 53-week years. As a result, week and month boundaries weren’t standard, and all of that logic had to be defined in the query rather than relying on a normal calendar.
 
 I’ve built this so it can be re-run at the beginning of each trading year, with only minor edits needed to update the key dates. I also plan to improve it further by linking to a few smaller helper tables so that, over time, only those need to be updated instead of this larger script.
-
-In the spirit of honesty, this was my first larger table-building query, and I did lean on ChatGPT for support, both to help refine the logic and to tidy up the final version into the cleaner format you see here.
 
 Below is the SQL itself, and here’s a link to the output in CSV format - <a href="{{ '/assets/data/trading-canendar.csv' | relative_url }}" download>Download CSV</a>
 
