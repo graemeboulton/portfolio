@@ -13,7 +13,8 @@ Retail trading calendars are different to standard calendars as the trading year
 
 To fix this, I created a second table called trading_months_and_weeks. This table holds the “rules” for each trading year which weeks map to which trading month, and which season/half/quarter they belong to. By updating this table once per year, the main trading_calendar table can simply pull in all the logic.
 
-I used ChatGPT as a learning tool while working through this, mainly to validate my approach and help refine the final SQL examples. The core logic and modelling decisions were developed by me, and writing this post has helped deepen my understanding of why this structure is more maintainable.
+I used ChatGPT as a learning tool while working through this, mainly to validate my approach and help refine the final SQL examples. The core logic and modelling decisions were developed by me.
+
 Here is the SQL for the trading_months_and_weeks table.
 
 ```sql

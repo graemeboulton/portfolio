@@ -13,7 +13,7 @@ What made this a good test is that the trading year ran from January to February
 
 I’ve built this so it can be re-run at the beginning of each trading year, with only minor edits needed to update the key dates. I also plan to improve it further by linking to a few smaller helper tables so that, over time, only those need to be updated instead of this larger script.
 
-In the spirit of honesty, I did lean on ChatGPT for support to help refine the logic and to tidy up the final version into the cleaner format you see here.
+I used ChatGPT as a learning tool while working through this, mainly to validate my approach and help refine the final SQL examples. The core logic and modelling decisions were developed by me.
 
 Below is the SQL itself, and here’s a <a href="https://github.com/graemeboulton/portfolio/blob/master/assets/files/trading_calendar.csv" download>link</a> to the file in my public GitHub repo.
 
