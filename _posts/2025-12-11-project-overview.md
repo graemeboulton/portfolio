@@ -8,8 +8,6 @@ published: true
 
 Here is a high-level summary of this project. I will post a deep-dive into the finer details, but for now it explains how it was pulled together.
 
----
-
 ## Reed Job Pipeline — Project Summary
 
 
