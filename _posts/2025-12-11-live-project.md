@@ -3,6 +3,7 @@ title: "Jobs insight project MVP is live!"
 date: 2025-12-11 12:00:00 +0000
 categories:
   - blog
+published: false
 ---
 Over the last couple of weeks I've been working on my portfolio, which starts with providing insights into a sample of the job market, from Reed.co.uk, via their API.
 
