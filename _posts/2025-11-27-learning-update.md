@@ -4,7 +4,7 @@ date: 2025-11-27
 categories:
   - blog
 ---
-It’s been about 10 days since my last update, so in the off-chance anyone is following my progress, I wanted to share a quick overview of what I’ve been up to.
+It’s been about 10 days since my last update, so I wanted to share a quick overview of what I’ve been up to.
 
 After finishing the SQL course and posting a couple of updates around that, I’ve now shifted my focus to Python. It’s one of the most frequently referenced skills in Data Analyst job descriptions (more on that shortly), so I need to get to grips with it sharp-ish.
 
