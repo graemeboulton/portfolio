@@ -10,6 +10,10 @@ permalink: /job-insights-project/
 
 ---
 
+## Infrastructure & Architecture
+
+![Jobs Pipeline](../assets/images/jobs-pipeline.png)
+
 ## Project background
 
 With this project, I wanted to both demonstrate a broad range of data and BI skills and gain practical insights into the job market to support my own career transition.
