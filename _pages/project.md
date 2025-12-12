@@ -31,7 +31,7 @@ Working with AI-assisted coding helped me:
 	•	Build modular, reusable components
 	•	Adopt better coding practices over time
 
-While I don’t claim to fully understand every line of the generated code yet, I do understand the structure, flow and purpose of each component. This project was intentionally a practical learning exercise, and there are still areas—particularly around advanced patterns and optimisation—that I am actively developing.
+As I am new to Python I don’t claim to fully understand every line of the generated code yet, I do understand the structure, flow and purpose of each component. This project was intentionally a practical learning exercise, and there are still areas—particularly around advanced patterns and optimisation—that I am actively developing.
 
 Debugging, integrating, and refining the solution gave me a strong foundation, and I continue to revisit and improve sections as my fluency in Python increases.
 
