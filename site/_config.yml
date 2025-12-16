@@ -1,5 +1,8 @@
 title: Graeme Boulton
 
+url: "https://graemeboulton.github.io"
+baseurl: "/portfolio-website"
+
 plugins:
   - jekyll-bookshop
   - jekyll-sitemap
