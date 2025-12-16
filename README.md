@@ -1,72 +1,53 @@
-# Graeme Boulton — Portfolio Website
+# Vonge
 
-This repository contains the source for my personal portfolio website: **[graemeboulton.com](https://www.graemeboulton.com)**.
-It showcases my work in **data analytics**, **business intelligence**, and **cloud engineering**, and acts as a central place for my projects, dashboards, and articles.
+Vonge is a Personal portfolio/blog site template for Jekyll. Browse through a [live demo](https://jazzed-kale.cloudvent.net/).
+Increase the web presence of your brand with this configurable theme.
 
-The site is built using the **Minimal Mistakes Jekyll theme**, deployed via **GitHub Pages**, and customised to serve as a clean, fast, and easy-to-navigate portfolio for prospective employers, recruiters, and anyone curious about my work in data.
+![Vonge template screenshot](_screenshot.png)
 
----
+Vonge was made by [CloudCannon](http://cloudcannon.com/), the JAMStack Cloud CMS.
+The component library is built and maintained for use with [Bookshop](https://github.com/cloudcannon/bookshop/)
 
-## 🚀 Purpose of the Website
+Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Community](https://cloudcannon.com/community/).
 
-The site is designed to:
+[![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/vonge-jekyll-bookshop-template)
 
-* Present my end-to-end data projects, including ETL pipelines, cloud architecture, data modelling, and Power BI dashboards.
-* Highlight my technical strengths across **Python**, **SQL**, **Azure**, **Power BI**, and modern data engineering practices.
-* Share write-ups, technical deep-dives, and learning resources.
-* Provide a single, professional landing page during my transition further into the data and analytics field.
+## Features
 
----
+* Component library for website building
+* Fully configurable Website
+* Pre-built pages
+* Pre-styled components
+* Blog
+* Category pages
+* Testimonials
+* Portfolio
+* Live editing with [CloudCannon](http://cloudcannon.com/)
+* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
+* Search engine optimisation
 
-## 📁 Repository Structure
+## Develop
 
-The repo follows the typical Minimal Mistakes layout:
+Vonge was built with [Jekyll](http://jekyllrb.com/) version 4.2.1, but should support newer versions as well.
 
-* **`index.html`** – Homepage layout
-* **`_pages/`** – Custom pages (About, Projects, Portfolio, etc.)
-* **`_posts/`** – Blog posts / long-form write-ups
-* **`assets/`** – Images, screenshots, diagrams
-* **`_data/`** – Navigation and configuration data
-* **`_config.yml`** – Global site configuration for theme, plugins, navigation, and metadata
-* **`CNAME`** – Custom domain configuration for graemeboulton.com
+Install the dependencies for Bookshop:
 
----
+~~~bash
+$ npm install
+~~~
 
-## 🧩 Technology Stack
+Install the Jekyll dependencies with [Bundler](http://bundler.io/):
 
-**Framework**: Jekyll
-**Theme**: Minimal Mistakes
-**Hosting**: GitHub Pages
-**Languages**: HTML, Markdown, Liquid
-**Integrations**:
+~~~bash
+$ npm run jekyll:install
+~~~
 
-* Power BI embedded reports (where supported)
-* External GitHub repositories for project source code
-* Images, diagrams, and architecture visuals generated during my data pipeline builds
+Run the website:
 
----
+~~~bash
+$ npm start
+~~~
 
-## 🛠 Customisation
 
-To adapt the theme for a portfolio-focused layout, I’ve:
-
-* Added custom navigation items for *Projects*, *Portfolio*, and *About*
-* Embedded interactive dashboards and screenshots
-* Created dedicated pages for major data builds (Azure ETL pipeline, Power BI dashboards, SQL modelling, etc.)
-* Added SEO metadata and descriptions for indexing
-* Created reusable page templates for future projects and blog posts
-
----
-
-## 📬 Contact
-
-If you’d like to reach out or view more of my work:
-
-* **Website**: [https://www.graemeboulton.com](https://www.graemeboulton.com)
-* **LinkedIn**: [https://linkedin.com/in/graemeboulton](https://linkedin.com/in/graemeboulton)
-
----
-
-## 📄 License
-
-This project is open-source under the MIT License. Feel free to explore, reference, or adapt the structure for your own site.
+> [!IMPORTANT]
+> When running locally, the pagination will not work. Deploy to CloudCannon to see successful pagination. 

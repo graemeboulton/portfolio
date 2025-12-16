@@ -1,0 +1,16 @@
+logo_image: '/images/logo.svg' # You can add own logo. For example '/images/logo.png'.
+
+menu__settings:
+  menu__items:
+    - title: 'Home'
+      url: '/'
+    - title: 'My Works'
+      url: '/my-works/'
+    - title: 'Blog'
+      url: '/blog/'
+    - title: 'Transitioning into Data'
+      url: '/transitioning-into-data/'
+    - title: 'C.V'
+      url: '/cv/'
+
+
