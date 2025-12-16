@@ -13,6 +13,11 @@ bookshop_locations:
 exclude:
   - postcss.config.js
   - node_modules
+  - vendor
+  - .bundle
+  - Gemfile
+  - Gemfile.lock
+  - ../old
 
 include:
   - _cloudcannon

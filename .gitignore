@@ -5,3 +5,6 @@ Gemfile.lock
 .python_packages
 __pycache__
 .venv
+site/vendor/
+site/.bundle/
+node_modules/
