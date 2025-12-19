@@ -12,7 +12,7 @@ hide_image: true
 
 ## Infrastructure & Architecture
 
-![Jobs Pipeline](/images/jobs-pipeline.png)
+![Jobs Pipeline](/images/jobs-pipeline.svg)
 
 ---
 

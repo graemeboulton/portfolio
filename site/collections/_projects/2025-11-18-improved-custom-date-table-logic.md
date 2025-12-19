@@ -1,7 +1,7 @@
 ---
 date: 2025-11-18 05:20:35 +0300
-title: Custom data table logic v2
-subtitle: Improved custom date table logic for easier management
+title: Custom date table built in SQL v2
+subtitle: Improved date dimension table used for time intelligence reporting
 image: '/images/improved-date-table-hero.png'
 hide_image: true
 ---
