@@ -8,7 +8,7 @@ hide_image: true
 
 ## Project background
 
-This project took place during my previous role. Due to confidentiality, I’m unable to share the final reports themselves, but I can explain the approach, decisions, and architecture used to successfully migrate from SAP BusinessObjects to Power BI.
+Due to confidentiality, I’m unable to share the final reports themselves, but I can explain the approach, decisions, and architecture used to successfully migrate from SAP BusinessObjects to Power BI.
 
 The journey began in early 2020, during the first Covid lockdown, while I was on furlough. With the business facing unprecedented disruption, I was keen to use the time productively and saw a clear opportunity to modernise our reporting capability. Around this time, the organisation had just purchased its first Power BI licence.
 
