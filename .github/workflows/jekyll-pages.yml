@@ -19,8 +19,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Ruby
@@ -29,17 +30,31 @@ jobs:
           ruby-version: "3.2"
           bundler-cache: true
 
-      - name: Setup Pages
+      - name: Install Bundler (match Gemfile.lock)
+        run: gem install bundler -v 4.0.1
+
+      - name: Setup GitHub Pages
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Build with Jekyll
+      - name: Build site with Jekyll
         env:
           JEKYLL_ENV: production
         run: |
-          bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+          bundle exec jekyll build \
+            --baseurl "${{ steps.pages.outputs.base_path }}"
 
-      - name: Upload artifact
+      - name: Install html-proofer
+        run: gem install html-proofer
+
+      - name: Check built site for broken links
+        run: |
+          htmlproofer ./_site \
+            --disable-external \
+            --check-html \
+            --allow-hash-href
+
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
@@ -48,9 +63,11 @@ jobs:
     if: github.event_name == 'push'
     needs: build
     runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
