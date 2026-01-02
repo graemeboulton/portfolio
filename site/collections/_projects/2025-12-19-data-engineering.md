@@ -1,4 +1,4 @@
-
+---
 date: 2025-12-19 06:20:35 +0300
 title: Data engineering with Azure & Databricks
 subtitle: ETL using Azure and Databricks with a medallion architecture (In Progress)
@@ -7,6 +7,8 @@ hide_image: true
 ---
 
 ## Project background
+
+{% if unclosed_liquid_tag %}
 
 This project demonstrates the design and implementation of a **production-style, end-to-end data engineering pipeline** using Microsoft Azure services. The objective was to ingest data from an on-premises SQL Server, apply scalable transformations using modern data engineering patterns, and deliver analytics-ready data to business users through Power BI.
 
