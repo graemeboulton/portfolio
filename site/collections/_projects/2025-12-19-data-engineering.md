@@ -3,7 +3,7 @@ date: 2025-12-19 06:20:35 +0300
 title: Data engineering with Azure & Databricks
 subtitle: ETL using Azure and Databricks with a medallion architecture (In Progress)
 image: '/images/data-engineering-project.svg'
-hide_image: true
+hide_image: trues
 ---
 
 ## Project background
