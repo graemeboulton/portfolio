@@ -400,11 +400,3 @@ func azure functionapp publish <your-function-app-name>
 - **Salary comparison** → solved with annualization logic
 
 ---
-
-## 📚 Documentation
-
-- [Project Structure](docs/project_structure.md) - Repository organization
-- [Duplication Prevention](docs/duplication_prevention.md) - Data quality strategies
-- [Recent Changes](docs/recent_changes.md) - Change log and improvements
-
----
