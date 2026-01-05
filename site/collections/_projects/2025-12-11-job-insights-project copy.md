@@ -10,13 +10,13 @@ hide_image: true
 </div>
 ---
 
-## Project background
+## 📋 Project Background
 
 With this project, I wanted to both demonstrate a broad range of data and BI skills and gain practical insights into the job market to support my own career transition.
 
 ---
 
-## Data selection
+## 📊 Data Selection
 
 Initially, I considered using sample datasets from Kaggle or Hugging Face, but after researching publicly available options, the Reed.co.uk API stood out as a richer, more realistic source for a project centred around analytics, ETL, and reporting.
 

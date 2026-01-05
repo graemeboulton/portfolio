@@ -6,7 +6,7 @@ image: '/images/data-engineering-project.svg'
 hide_image: true
 ---
 
-## Project Overview
+## 📋 Project Overview
 
 When I decided on my first portfolio project — the [UK data job market insights](https://www.graemeboulton.com/project/job-insights-project-copy) — one of its main purposes was to better understand where demand and value existed in the market, and to use those insights to help guide my own upskilling.
 
@@ -16,25 +16,27 @@ I was also keen to work with a different type of data source, so for this projec
 
 ---
 
-## Architecture
+## 🏗️ Architecture
 
 ![Jobs Pipeline](/images/data-engineering-pipeline.svg)
 
 ---
 
-## Technical Stack
+## 🛠️ Technical Stack
 
-- Azure Data Factory
-- Azure Data Lake Storage Gen2
-- Azure Databricks
-- Azure Synapse Analytics
-- Azure Key Vault
-- Microsoft Entra ID
-- Tableau
+- **Azure Data Factory** - Orchestration and data integration
+- **Azure Data Lake Storage Gen2** - Scalable data lake storage
+- **Azure Databricks** - Data transformation and analytics
+- **Azure Synapse Analytics** - Serverless SQL querying
+- **Azure Key Vault** - Secure secrets management
+- **Microsoft Entra ID** - Identity and access management
+- **Tableau** - Business intelligence and visualization
 
-## Implementation Overview
+---
 
-### Data Ingestion
+## 💡 💡 Implementation Overview
+
+### 🔌 Data Ingestion
 
 Data ingestion was handled using **Azure Data Factory** to securely extract data from an **on-premises SQL Server** environment and land it in Azure in a scalable, repeatable way.
 
@@ -56,7 +58,7 @@ bronze/{schema}/{table}/{table}.parquet
 
 ---
 
-### Data Transformation
+### 🔄 Data Transformation
 
 Data transformation was implemented using **Azure Databricks** and follows a clear **Bronze → Silver → Gold** pattern to separate raw data from curated and business-ready datasets.
 
@@ -84,7 +86,7 @@ Delta Lake continues to be used at this layer, enabling reliable overwrites, eas
 
 ---
 
-### Orchestration
+### ⚙️ Orchestration
 
 End-to-end orchestration is handled by **Azure Data Factory**, which coordinates ingestion, transformation, and downstream processing.
 
@@ -108,7 +110,7 @@ This orchestration design closely mirrors how production data pipelines are buil
 
 ---
 
-## Serving & Reporting
+## 📊 Serving & Reporting
 
 The curated Gold datasets are exposed via **Azure Synapse Analytics (Serverless SQL)** and consumed directly by **Tableau**.
 
@@ -118,18 +120,18 @@ Note: Dashboards are currently in progress
 
 ---
 
-## Security & Governance
+## 🔒 Security & Governance
 
-- Managed identities used across Azure services
-- Secrets stored securely in Azure Key Vault
-- RBAC enforced via Microsoft Entra ID
-- Security groups used to manage access at scale
+- **Managed identities** used across Azure services
+- **Secrets** stored securely in Azure Key Vault
+- **RBAC** enforced via Microsoft Entra ID
+- **Security groups** used to manage access at scale
 
 ---
 
-## Outcome
+## ✨ Outcome
 
-- Fully automated end-to-end data pipeline
-- Analytics-ready data model optimised for Tableau
-- Daily refreshed dashboards without manual intervention
-- Scalable, production-aligned Azure architecture
+- ✅ **Fully automated** end-to-end data pipeline
+- ✅ **Analytics-ready** data model optimised for Tableau
+- ✅ **Daily refreshed** dashboards without manual intervention
+- ✅ **Scalable**, production-aligned Azure architecture
