@@ -22,7 +22,7 @@ Initially, I considered using sample datasets from Kaggle or Hugging Face, but a
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ![Jobs Pipeline](/images/jobs-pipeline.svg)
 
@@ -59,16 +59,16 @@ Initially, I considered using sample datasets from Kaggle or Hugging Face, but a
 
 ---
 
-## ✨ Key Features & Capabilities
+## Key Features & Capabilities
 
-### 🔌 Robust API Integration
+### Robust API Integration
 - **4-tier API key rotation** with round-robin load balancing
 - **Intelligent rate-limit handling** (403 errors → automatic fallback)
 - **Adaptive retry logic** with exponential backoff (500/502/503 errors)
 - **Incremental ingestion** (configurable lookback window: fetch only jobs posted in last N days)
 - **Content-hash change detection** (MD5 hashing prevents unnecessary reprocessing)
 
-### 🔍 Smart Data Enrichment
+### Smart Data Enrichment
 - **Auto-fetches full job descriptions** from detail endpoint (works around Reed's 453-char truncation)
 - **Description validation** detects truncation patterns and validates completeness
 - **60+ canonical skills extraction** with regex patterns and normalization (e.g., `postgres` → `postgresql`, `k8s` → `kubernetes`)
@@ -78,7 +78,7 @@ Initially, I considered using sample datasets from Kaggle or Hugging Face, but a
 - **Employment type extraction**: Full-time, Part-time, Contract
 - **Job role categorization**: Engineering, Analyst, Scientist, Architect
 
-### 🧹 Intelligent Filtering & Quality
+### Intelligent Filtering & Quality
 - **Rule-based title filtering** with word-boundary matching (configurable include/exclude lists)
 - **Optional ML classifier** (TF-IDF + Naive Bayes) for advanced job relevance scoring
 - **Deduplication** via composite primary keys at every layer
@@ -86,7 +86,7 @@ Initially, I considered using sample datasets from Kaggle or Hugging Face, but a
 - **Data quality metrics** (enrichment rate, description validation, duplicate detection)
 - **Blacklist support** for permanently excluded job IDs
 
-### 💰 Salary Normalization & Analytics
+### Salary Normalization & Analytics
 - **Salary annualization** converts all salary types to annual figures:
   - `per week` × 52 weeks/year
   - `per day` × 260 working days/year  
@@ -95,7 +95,7 @@ Initially, I considered using sample datasets from Kaggle or Hugging Face, but a
 - **Original value preservation** (`*_old` columns for audit trail)
 - Enables consistent cross-title salary comparisons
 
-### 📊 Dimensional Data Warehouse
+### Dimensional Data Warehouse
 - **Star schema design** with fact and dimension tables
 - **Materialized analytics table** (`fact_jobs`) with pre-computed dimensional keys
 - **10+ dimension tables**: Salary bands, employers, locations, seniority, contracts, skills, etc.
@@ -105,7 +105,7 @@ Initially, I considered using sample datasets from Kaggle or Hugging Face, but a
 
 ---
 
-## 🛠️ Technical Stack
+## Technical Stack
 
 | Layer | Technology | Purpose |
 |-------|------------|---------|
@@ -120,7 +120,7 @@ Initially, I considered using sample datasets from Kaggle or Hugging Face, but a
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 jobs-pipeline/
@@ -161,16 +161,16 @@ jobs-pipeline/
 
 ---
 
-## 🔄 Data Flow
+## Data Flow
 
-### 1️⃣ Extract (API Ingestion)
+### 1. Extract (API Ingestion)
 - **Fetch jobs** from Reed.co.uk API with pagination (50–100 results per page)
 - **Incremental filtering** (only jobs posted in last N days via `postedByDays` parameter)
 - **Round-robin key rotation** distributes load across 4 API keys
 - **Rate-limit handling** automatically falls back to backup keys on 403 errors
 - **Store raw JSON** in `landing.raw_jobs` with content hash for change detection
 
-### 2️⃣ Transform (Data Enrichment)
+### 2. Transform (Data Enrichment)
 - **Title filtering** applies include/exclude rules with word-boundary matching
 - **Skill extraction** identifies 60+ canonical skills from descriptions
 - **Skill normalization** maps variations to standard names (e.g., `powerbi` → `power bi`)
@@ -179,14 +179,14 @@ jobs-pipeline/
 - **Salary annualization** converts all salary types to annual figures
 - **Job role categorization** assigns Engineering/Analyst/Scientist/Architect
 
-### 3️⃣ Load (Database Operations)
+### 3. Load (Database Operations)
 - **Atomic UPSERT** to `staging.jobs_v1` via temp table pattern
 - **Batch inserts** (500–1,000 rows per operation)
 - **Skill extraction** to `staging.job_skills` junction table
 - **Dimension population** (employers, locations, seniority, etc.)
 - **Fact table materialization** (`fact_jobs`) with pre-computed dimensional keys
 
-### 4️⃣ Analytics (Power BI)
+### 4. Analytics (Power BI)
 - **Direct Query** or **Import mode** connections to PostgreSQL
 - **Pre-computed metrics** (days open, apps/day, competition analysis)
 - **Dimensional analysis** (salary bands, seniority, skills, locations)
@@ -194,7 +194,7 @@ jobs-pipeline/
 
 ---
 
-## 📊 Database Schema
+## Database Schema
 
 ### Landing Layer
 **`landing.raw_jobs`** - Raw API responses
@@ -271,7 +271,7 @@ CREATE TABLE staging.job_skills (
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 All settings are environment-driven via `local.settings.json`:
 
@@ -303,7 +303,7 @@ All settings are environment-driven via `local.settings.json`:
 
 ---
 
-## 🚀 Running the Pipeline
+## Running the Pipeline
 
 ### Local Development
 ```bash
@@ -329,7 +329,7 @@ func azure functionapp publish <your-function-app-name>
 
 ---
 
-## 📈 Key Metrics & Performance
+## Key Metrics & Performance
 
 ### Current System Stats
 - **Total jobs processed**: 2,791 unique postings
@@ -340,59 +340,59 @@ func azure functionapp publish <your-function-app-name>
 - **Enrichment rate**: >95% full descriptions fetched
 
 ### Performance Optimizations
-- ✅ **Indexed queries** (primary keys + salary band index)
-- ✅ **Materialized fact table** (eliminates expensive joins)
-- ✅ **Batch inserts** (500–1,000 rows per operation)
-- ✅ **Atomic transactions** (temp table pattern for consistency)
-- ✅ **Content-hash caching** (avoids unnecessary reprocessing)
-- ✅ **Round-robin key rotation** (distributes API load evenly)
+- **Indexed queries** (primary keys + salary band index)
+- **Materialized fact table** (eliminates expensive joins)
+- **Batch inserts** (500–1,000 rows per operation)
+- **Atomic transactions** (temp table pattern for consistency)
+- **Content-hash caching** (avoids unnecessary reprocessing)
+- **Round-robin key rotation** (distributes API load evenly)
 
 ---
 
-## 🎓 Skills Demonstrated
+## Skills Demonstrated
 
 ### Data Engineering
-- ✅ **ETL Pipeline Design** - End-to-end data flow from API to warehouse
-- ✅ **API Integration** - Rate limiting, retry logic, authentication
-- ✅ **Data Warehousing** - Star schema, dimensional modeling, indexing
-- ✅ **Data Quality** - Deduplication, validation, change detection
-- ✅ **Performance Optimization** - Batch processing, materialized views, indexing
+- **ETL Pipeline Design** - End-to-end data flow from API to warehouse
+- **API Integration** - Rate limiting, retry logic, authentication
+- **Data Warehousing** - Star schema, dimensional modeling, indexing
+- **Data Quality** - Deduplication, validation, change detection
+- **Performance Optimization** - Batch processing, materialized views, indexing
 
 ### Python Development
-- ✅ **Clean Code** - Modular design, type hints, docstrings
-- ✅ **Error Handling** - Robust exception management, logging
-- ✅ **Testing** - Local test runner for development
-- ✅ **Configuration Management** - Environment-driven settings
+- **Clean Code** - Modular design, type hints, docstrings
+- **Error Handling** - Robust exception management, logging
+- **Testing** - Local test runner for development
+- **Configuration Management** - Environment-driven settings
 
 ### Database Engineering
-- ✅ **PostgreSQL** - DDL, DML, CTEs, window functions
-- ✅ **Schema Design** - Normalization, foreign keys, constraints
-- ✅ **Query Optimization** - Indexes, materialized views, batch operations
-- ✅ **ACID Transactions** - Atomic operations, consistency guarantees
+- **PostgreSQL** - DDL, DML, CTEs, window functions
+- **Schema Design** - Normalization, foreign keys, constraints
+- **Query Optimization** - Indexes, materialized views, batch operations
+- **ACID Transactions** - Atomic operations, consistency guarantees
 
 ### Cloud & DevOps
-- ✅ **Azure Functions** - Serverless compute, timer triggers
-- ✅ **Azure Database for PostgreSQL** - Managed database service
-- ✅ **CI/CD** - Automated deployment pipeline
-- ✅ **Security** - Secrets management, SSL connections
+- **Azure Functions** - Serverless compute, timer triggers
+- **Azure Database for PostgreSQL** - Managed database service
+- **CI/CD** - Automated deployment pipeline
+- **Security** - Secrets management, SSL connections
 
 ### Analytics & BI
-- ✅ **Power BI** - Dashboard design, DAX measures, data modeling
-- ✅ **Dimensional Modeling** - Star schema, fact/dimension tables
-- ✅ **Business Metrics** - KPIs, trends, competitive analysis
+- **Power BI** - Dashboard design, DAX measures, data modeling
+- **Dimensional Modeling** - Star schema, fact/dimension tables
+- **Business Metrics** - KPIs, trends, competitive analysis
 
 ---
 
-## 📝 Lessons Learned
+## Lessons Learned
 
-### ✅ Successes
+### Successes
 - **Robust API integration** handles rate limits gracefully with 4-key rotation
 - **Content hashing** prevents unnecessary reprocessing (40%+ API call reduction)
 - **Atomic temp-table pattern** eliminates mid-batch failures and duplicates
 - **Salary annualization** enables accurate cross-title comparisons
 - **Materialized fact table** dramatically improves Power BI query performance
 
-### 🔧 Challenges Overcome
+### Challenges Overcome
 - **Reed API description truncation** (453 chars) → solved with detail endpoint fetching
 - **Rate limiting** (403 errors) → solved with 4-tier fallback and round-robin rotation
 - **Mid-batch failures** → solved with atomic temp-table pattern
