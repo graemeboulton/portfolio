@@ -757,11 +757,50 @@ This orchestration design closely mirrors how production data pipelines are buil
 
 ---
 
-## Serving & Reporting
+## Serving Gold Data to BI Tools
 
-The curated Gold datasets are exposed via **Azure Synapse Analytics (Serverless SQL)** and consumed directly by **Tableau**.
+The curated **Gold-layer datasets** are exposed via **Azure Synapse Analytics (Serverless SQL)** and consumed directly by **Tableau**.
 
-Using a serverless SQL layer allows Tableau to query the data lake without duplicating data, while still providing a familiar relational interface for analytics and visualisation.
+Rather than loading data into a traditional data warehouse, this approach uses a **serverless SQL abstraction over the data lake**, allowing BI tools to query **Delta tables stored in Azure Data Lake** as if they were relational tables — without duplicating data.
+
+To support this, a reusable stored procedure is used to dynamically create or update **SQL views** over each Gold dataset:
+
+- Each view maps directly to a corresponding folder in the Gold layer  
+- Views are created using `OPENROWSET` with `FORMAT = 'DELTA'`, enabling Synapse to read Delta Lake metadata at query time  
+- The procedure standardises how Gold datasets are exposed, making them immediately consumable by BI tools such as Tableau  
+
+This pattern cleanly separates responsibilities:
+- **Databricks** handles transformation and curation (Bronze → Silver → Gold)  
+- **Synapse Serverless SQL** provides a lightweight, relational access layer  
+- **Tableau** consumes stable, analytics-ready views without requiring data duplication or warehouse storage
+
+```sql
+
+USE gold_db
+GO
+
+CREATE OR ALTER PROC CreateSQLServerlessView_gold @ViewName nvarchar(100)
+AS 
+BEGIN
+    DECLARE @statement VARCHAR(MAX)
+    SET @statement = N'CREATE OR ALTER VIEW ' + @ViewName + ' AS
+        SELECT
+            *
+        FROM
+            OPENROWSET(
+                BULK ''https://gbosstorageaccount.dfs.core.windows.net/gold/SalesLT/' + @ViewName + '/'',
+                FORMAT = ''DELTA''
+            ) AS [result]'
+
+    EXEC (@statement)
+END
+GO
+
+```
+
+---
+
+## Reporting
 
 In contrast to my earlier BI-focused portfolio work, this project prioritises data engineering fundamentals — from ingestion through Bronze/Silver/Gold transformations to consumption in Tableau. The dashboard is deliberately functional, with minimal time spent on visual refinement, to keep the focus on data modelling, transformations, and cross-tool capability.
 
