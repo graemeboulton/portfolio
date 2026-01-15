@@ -772,5 +772,5 @@ Note: Dashboards are currently in progress
 - **Managed identities** used across Azure services
 - **Secrets** stored securely in Azure Key Vault
 - **RBAC** enforced via Microsoft Entra ID
-- **Security groups** used to manage access at scale
+- **Security groups** used to manage access at scale 
 
