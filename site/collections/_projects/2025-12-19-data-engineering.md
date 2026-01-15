@@ -757,16 +757,6 @@ This orchestration design closely mirrors how production data pipelines are buil
 
 ---
 
-## Serving & Reporting
-
-The curated Gold datasets are exposed via **Azure Synapse Analytics (Serverless SQL)** and consumed directly by **Tableau**.
-
-Using a serverless SQL layer allows Tableau to query the data lake without duplicating data, while still providing a familiar relational interface for analytics and visualisation.
-
-Note: Dashboards are currently in progress
-
----
-
 ## Security & Governance
 
 - **Managed identities** used across Azure services
@@ -775,6 +765,14 @@ Note: Dashboards are currently in progress
 - **Security groups** used to manage access at scale.
 
 ---
+
+## Serving & Reporting
+
+The curated Gold datasets are exposed via **Azure Synapse Analytics (Serverless SQL)** and consumed directly by **Tableau**.
+
+Using a serverless SQL layer allows Tableau to query the data lake without duplicating data, while still providing a familiar relational interface for analytics and visualisation.
+
+In contrast to my earlier BI-focused portfolio work, this project prioritises data engineering fundamentals — from ingestion through Bronze/Silver/Gold transformations to consumption in Tableau. The dashboard is deliberately functional, with minimal time spent on visual refinement, to keep the focus on data modelling, transformations, and cross-tool capability.
 
 {% include tableau/adventureworks-customers.html %}
 
