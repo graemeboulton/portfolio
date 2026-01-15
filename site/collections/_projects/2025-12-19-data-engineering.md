@@ -776,3 +776,5 @@ This dashboard is intentionally light on UI polish. Unlike my first portfolio pr
 
 The emphasis of this project is therefore on pipeline design, transformation logic, data modelling, and tool-agnostic analytics consumption rather than advanced visual styling.
 
+---
+
